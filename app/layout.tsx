@@ -85,6 +85,7 @@ export default async function RootLayout({
       className={`${pixelifySans.variable} ${silkscreen.variable}`}
     >
       <head>
+      <meta name="virtual-protocol-site-verification" content="77f59c8d38f49c0af5651934179e428e" />
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(){var t=localStorage.getItem('moltscore-theme');if(t==='light')document.documentElement.classList.remove('dark');else if(t==='dark'||!t&&window.matchMedia('(prefers-color-scheme:dark)').matches)document.documentElement.classList.add('dark');else document.documentElement.classList.remove('dark');})();`,
