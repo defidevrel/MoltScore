@@ -534,6 +534,8 @@ Each task is small, testable, and independent. One at a time.
 
 ## Executor's Feedback or Assistance Requests
 
+- **ACP 2.0 migration (2026-04-19):** `acp-cli` cloned to `/Users/test/acp-cli`, `npm install` done. Wrapper: `MoltScore/scripts/acp.sh` (override with `ACP_CLI_ROOT`). **`acp configure` was not completed** — requires human browser OAuth at Virtuals (CLI prints `{"url":...}` with `--json`). After login: `scripts/acp.sh agent whoami --json`, then `scripts/acp.sh agent migrate` / `--complete` if needed. New Cursor skill: `~/.cursor/skills/acp-cli/SKILL.md`. Disable legacy `openclaw-acp` when verified.
+
 - **Phase 0 COMPLETE.** All 5 tasks executed and verified.
 - **Phase 1 COMPLETE.** All 5 tasks executed and verified:
   - **1.1** `app/api/leaderboard/route.ts` — unified endpoint that prefers enhanced data, falls back to basic. Returns `source: "enhanced" | "basic"` field so consumers know which scoring system was used.
